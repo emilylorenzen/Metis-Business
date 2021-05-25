@@ -1,0 +1,27 @@
+Metis Business Module
+
+Emily Lorenzen
+
+05/25/2021
+
+# Minimum Viable Project
+
+## Problem/Goal:
+Natural variations in human protein arising from differences in the human genome are a cause of individual differences in response to medications. It is possible that these individual responses have led to drug failure in clinical trials. Schrodinger is a molecular modeling company that has the ability to model drug-protein interaction and consequences. Recently, Shrodinger started partnering with pharma companies to test candidate drugs in the preclinical and clinical trials. However, clinical trials are expensive and likely to fail. Pharma companies will be more interested partnerships if the candidate drug has already passed both the preclinical and safety clinical trials. 
+
+One method to bypass the preclinical and safety clinical trials is by repurposing drugs that have passed through at least Phase I. One reason a drug mauy have failed in subsequent phases is due to natural proteins variants. Therefore it would be of interest to pharma companies to molecular model of a drug with the target protein and its variants. However, this is time consuming and narrowing double more probable candidates is necessary.
+
+## Impact 
+Create new partnership with pharma companies, resulting in increased revenue. Reduce resources used within the company by focusing on drugs of most interest. 
+
+## Impact hypothesis 
+We can identify drugs that failed in clinical trials due to natural protein variations. 
+
+## Solution paths
+1. Build a classification model to determine if a drug will pass a clinical trial or not using all data from successful clinical trials, and just a portion of phase 2 and phase 3 clinical trials. After model building test the rest of the phase 2 and phase 3 clinical trial drugs and take note of any outliers. Then investigate the location and potential impact of each variant on the outlier drugs. 
+
+## Supporting visualization
+
+![](2021-05-24-19-52-28.png)
+
+From a database of all human variants, I used a pivot table to determine the number of variants per protein and plotted it against the length of the protein. There was not a clear linear relationship between the protein length and number of variants. This suggests that some proteins may be of more interest when investigating if protein variation could have accounted for previous clinical trial failures. 
