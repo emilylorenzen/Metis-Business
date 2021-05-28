@@ -1,0 +1,86 @@
+Emily Lorenzen
+Metis Bootcamp - Business Module
+05/28/2021
+
+# Expand Schrodinger's biotech partnerships
+
+# Exploratory Data Analysis
+## Abstract
+One of the reasons drugs fail the efficacy phase of clincal trials is due to natural variation in the target protein. Since these drugs have passed the preclinical and safety phases of clinical trials, pharma companies could save money and time by reinvestigating the failed drugs that likely failed due to protein variation. Schrodinger has the molecular modeling capabilities to demonstrate that a protein variant affect drug efficacy. I propose to identify drugs that likely failed due to natural variants using a hybrid deep learning algorithm. Initial data analysis demonstrated that one clear difference between variants that affect drug response and othe variants is the density of variation in the respective protein.  
+
+## Results/Design 
+I first researched, gathered, mapped and cleaned data on all human protein variants, drug target variants, and protein variants known to affect drug efficacy. I then plotted the distribution of each group. 
+
+![](variant_distributions.png)
+
+The steep on the right skew seemed to decrease going from all protein variants to drug target variants and finally drug efficacy variants. I then compared the average number of variations in the proteins for each group. 
+
+![](variant_averages.png)
+
+With an alpha of 0.05, the proteins that have variants that affect drug response have a statistically significantly higher variation. Proteins that were targeted by drugs taht failed at efficacy stages of clinical trrials did not show a differrence between proteins targets of approved drugs or proteins with variants that affect drug response. statistictal significant 
+
+## Data
+Data was obtained from the following public databases:
+
+Index of human variants curated from literatrure - https://www.uniprot.org/docs/humsavar
+
+List of drugs, vtargets, and clinical phases passed - https://www.broadinstitute.org/drug-repurposing-hub
+
+List of variants that affect drug response - http://clinvar.com/
+
+Genome sequencing cost data - https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data
+
+Reasons for failure at efficacy phase- 
+
+## Algorithms
+Statistical tests used were the t-test. It should be noted that a more appropriate test would be a Mann-Whitney U to compare drug response variants and all variants. To compare the variation in proteins targets with clinical trials ending at different phases, a Kruskal-Wallis test would be most appropriate. 
+
+## Tools 
+Google sheets was used for feature calculations, grouping, mapping, and simple charts. 
+
+Tableau was used for visualization
+
+Pandas was used for more advanced database manipulation
+
+## Communication
+This project was presented to Metis Bootcamp colleagues on May 28, 2012. Data, spreadsheets and code are available at my github in the metis-business repository. My Tableau public account can be accessed at https://public.tableau.com/profile/emily.lorenzen#!/ in the Metis-Business-Variatns "Viz". 
+
+## Acknowledgements
+Rita Biagioli and Leon Johnson contributed to project brainstorming and data analysis ideas. 
+
+# Scoping
+## Background
+Recently, Schrodinger has begun partnering with large biotech companies. These companies develop and fund clinical trials for compounds identified using the molecular modeling capabilities at Schrodinger. Our partners will benefit if we provide compound leads that have already passed through the preclinical and safety phases required for successful clinical trials.
+
+## Impact Hypothesis
+By predicting which drugs failed clinical trials due to natural variations in human proteins, we can use molecular modeling to validate the prediction(s), and create new partnerships with pharma companies.
+
+## Nontechnical Scoping
+Given the resource intensity of molecular modeling, we need to reduce the number of failed drugs-target protein pairs to 
+This scoping will be performed by the development team, and business development team. 
+
+### Stakeholders
+The following stakeholders will be impacted by this project - Schrodinger, pharma companies, patients, doctor, and payors. 
+
+### Cost/benefit analysis
+Once the project is sucessfully implemented, Schrodinger will gain new partnerships and immediately bringing in additional revenue. Additional success of the drug through the approval process will also bring in revenue. Approval of a drug would provide evidence that the apporach is viable and lead to additional partnerships.
+
+If pharma companies are uninterested in this approach, Schrodinger will have wasted resources. Failure of a drug along the clinical trial approval pathway would bring skepticious to the approach and may tarnish the brand. 
+
+## Technical scoping
+### Approach
+Identify drug-target pairs that are the most likely to have failed the efficacy phases due to natural protein variation. 
+
+### Solutions
+Use a hybrid deep learning method, or deep neural network, to train a model to differentiate between variants that affect drug efficacy and those that do not. 
+
+### Major/Obvious Risks
+It is possible that we don't have access to enough features to build an acceptable model. In this case, it is better to err on the side of false negatives rather than false positives. 
+
+## Validation
+Validation of the predictions made by the classification model described will be performed with molecular modeling experiment to determine if the protein variant demonstrates different behaviors with the drug in comparison to the normal variant. 
+
+## Future-proofing
+It will be important to keep our databases current in regards to information deposited in the databases used for this project.  
+
+
