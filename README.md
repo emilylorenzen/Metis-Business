@@ -1,3 +1,9 @@
+Module Goals
+
+- Use spreadsheet software tools to explore, describe, and extract meaningful insights from tabular datasets
+- Implement best practices in project design, scoping, and planning to successfully manage data science projects
+- Develop frameworks for thinking about the business impact and ethical implications of their work with data
+
 # Natural Protein Variants in Clinical Trial Failure
 
 Found that proteins with a variant known to affect drug response have significantly higher variation. Determined that the average number of natural protein variants found in the protein targets is highest for drugs that failed in efficacy phases of clinical trials. 
