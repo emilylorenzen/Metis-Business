@@ -1,4 +1,4 @@
-Module Goals
+### Module Goals
 
 - Use spreadsheet software tools to explore, describe, and extract meaningful insights from tabular datasets
 - Implement best practices in project design, scoping, and planning to successfully manage data science projects
@@ -12,10 +12,10 @@ Found that proteins with a variant known to affect drug response have significan
 
 Figure: Upper panel - average number of protein variants for proteins with a variant known to affect drug reponse (yes) or from proteins without a variant known to affect drug response (no). Lower panel - average number of protein variants in the protein target of drug that failed in pre-clinical, safety, efficacy phases or passed clinical trials. 
 
-Tools used:
+### Tools used:
 Google sheets, Tableau, pandas
 
-Databases accessed: 
+### Databases accessed: 
 Uniprot, drug repurposing hub, clinvar
 
 
